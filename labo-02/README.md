@@ -38,15 +38,23 @@ Bij welke vraag zat je fout, en wat was de reden? (Alles juist? Welke vraag duur
 
 ## 6. Je site
 
-- Welke drie waarden staan in je tokenblok, en waarom die?
-- Wat verandert er in je site als je één token wijzigt?
+- Welke drie waarden staan in je tokenblok, en waarom die?  
+`--color-accent`: deze gebruik ik voor de kleur van mijn navigatielinks.
+- `--color-text`: deze gebruik ik voor de gewone tekst op mijn website.
+- `--font-body`: deze gebruik ik als lettertype voor de tekst op mijn website.
+- Wat verandert er in je site als je één token wijzigt? Als ik één token wijzig, verandert de waarde op alle plaatsen waar dat token gebruikt wordt. Als ik bijvoorbeeld `--color-accent` verander, krijgen mijn navigatielinks automatisch een andere kleur.
 
 ## Thuis: R2.3 (met AI)
 
 Prompt en onbewerkte output staan in `review/`. Minstens vijf bevindingen, elk met een verwijzing naar de sectie of het foutnummer:
 
-1. 
-2. 
-3. 
-4. 
-5. 
+1. **Pixel-soep:** de AI gebruikt veel `px`, bijvoorbeeld `padding: 40px 20px`, `max-width: 800px` en `margin: 40px auto`. Volgens **2.8 / F2.9** moet `px` niet gebruikt worden voor tekst en zijn `rem` en andere geschikte eenheden bedoeld voor relatieve afmetingen.
+
+2. **Overspecifieke selectors:** in deze output komt bijvoorbeeld `.kaart li:nth-child(even)` voor. De cursus waarschuwt bij **R2.3** voor overspecifieke selectors. Volgens **2.5** kun je met de structuur van de HTML selecteren zonder overal extra classes te gebruiken.
+
+3. **`!important`:** de AI gebruikt in deze output geen `!important`. Dit is dus juist **geen fout** in deze output. Volgens **F2.5/F2.6** en de AI-slide is `!important` iets dat je moet herkennen als het voorkomt.
+
+4. **Verweesde waarden:** de AI gebruikt `font-family: Georgia, serif;` rechtstreeks in `body`, terwijl de cursus bij **2.9** zegt dat je met design tokens werkt en waarden via `var()` uitleest. Een font is juist een voorbeeld van een waarde die als token kan worden benoemd.
+
+5. **Geneste spelling:** de AI gebruikt in deze output geen geneste CSS-spelling. Dit is dus ook **geen fout** in deze specifieke output. De cursus zegt bij **2.5** dat je geneste spelling moet kunnen lezen en naar de platte vorm moet kunnen vertalen.
+

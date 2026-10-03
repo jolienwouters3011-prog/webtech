@@ -1,0 +1,129 @@
+/* Kleuren */
+:root {
+    --papier: #fbf7f0;
+    --inkt: #2b2b2b;
+    --gedempt: #6b6b6b;
+    --accent: #b5451b;
+    --zebra: #f1e9dc;
+}
+
+/* Algemene stijl */
+body {
+    background-color: var(--papier);
+    color: var(--inkt);
+    font-family: Georgia, serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid var(--zebra);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.slogan {
+    color: var(--gedempt);
+    margin-top: 0;
+}
+
+/* Navigatie */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+}
+
+nav a {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--inkt);
+    text-decoration: underline;
+}
+
+/* Hoofdinhoud */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: var(--accent);
+    border-bottom: 2px solid var(--zebra);
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+/* Introductie */
+.intro {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Lijsten */
+.kaart {
+    list-style: none;
+    padding: 0;
+}
+
+.kaart li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid var(--zebra);
+}
+
+.kaart li:nth-child(even) {
+    background-color: var(--zebra);
+}
+
+.prijs {
+    font-weight: bold;
+}
+
+/* Links in main */
+main a {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+main a:hover,
+main a:focus {
+    color: var(--papier);
+    background-color: var(--accent);
+}
+
+/* Footer */
+footer {
+    background-color: var(--zebra);
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+}
+
+footer a {
+    color: var(--gedempt);
+}
+
+footer a:hover,
+footer a:focus {
+    color: var(--accent);
+}
