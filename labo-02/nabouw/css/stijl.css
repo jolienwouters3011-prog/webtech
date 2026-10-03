@@ -79,4 +79,8 @@ footer a{
   font-size: large;
 }
 
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
 

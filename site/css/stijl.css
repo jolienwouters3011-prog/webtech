@@ -1,0 +1,38 @@
+:root {
+    --color-accent: #3964c9;
+    --color-text: #110101;
+    --font-body: Verdana;
+    --font-heading: Georgia;
+    --size-base: 1rem;
+}
+
+body {
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: var(--size-base);
+}
+
+nav a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size:var(--size-base);
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+footer{
+text-align: center;
+color: var(--color-accent);
+}
+
+li:nth-child(odd) {
+background-color:var()
+}
+
+h2 {
+    font-size: small;
+}
