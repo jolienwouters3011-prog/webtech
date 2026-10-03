@@ -1,0 +1,82 @@
+:root {
+  --color-paper: #fbf7f0 ;
+  --color-ink: #2b2b2b ;
+  --color-muted: #6b6b6b;
+  --color-accent: #b5451b;
+  --color-zebra:  #f1e9dc;
+  --font-body: Verdana;
+  --font-heading: Georgia;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: var(--color-muted);
+}
+
+h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: lighter;
+}
+
+nav a {
+    color: #b5451b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.slogan {
+color:var(--color-muted);
+text-align:left;
+font-style:italic
+
+}
+
+h1{
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-size: 2.6rem;
+}
+
+strong {
+color: var(--color-accent);
+}
+
+.prijs {
+font-style: italic;
+}
+
+
+.kaart li:nth-child(odd) {
+  background: var(--color-zebra);
+
+}
+
+footer{
+  color: var(--color-muted);
+  text-align: center;
+  font-size: small;
+}
+
+ main a{
+  color: var(--color-accent);
+}
+
+footer a{
+  color: var(--color-muted);
+}
+
+.intro {
+  font-size: large;
+}
+
+
