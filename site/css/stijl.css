@@ -6,6 +6,19 @@
     --size-base: 1rem;
 }
 
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.kaart {
+    background-color: pink;
+    border: 0.20rem black solid;
+    padding: 3rem;
+    margin: 2rem;
+    border-radius: 2rem;
+}
+
 body {
     color: var(--color-text);
     font-family: var(--font-body);

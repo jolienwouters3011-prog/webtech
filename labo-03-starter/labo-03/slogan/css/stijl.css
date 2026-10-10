@@ -2,7 +2,52 @@
 
 /* === tokens === */
 :root {
-
+--text:#282827;
+--geel:#fccc00 ;
 }
 
 /* === your rules === */
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 12rem;
+    
+
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+ 
+}
+
+p{
+line-height: 1.5rem;
+margin-bottom: 2rem;
+
+}
+
+a{
+color: white;
+background-color:var(--text);
+text-decoration: none;
+:hover
+:focus
+line-height: 3rem;
+border-radius: 1rem;
+padding: 0.7rem;
+font-size: small;
+}
+
+span{
+    border-bottom: 0.5rem solid var(--geel);
+    border-radius: 100%;
+}
+
+h2,
+p{
+max-width: 30rem;
+margin: 0 auto;
+margin-bottom: 2rem;
+
+}

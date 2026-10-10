@@ -1,8 +1,118 @@
-/* stijl.css - labo 3, landing (reset.css is linked before this file) */
-
-/* === tokens === */
 :root {
-
+    --banner: #c8b8ff;
+    --link: #5551ff;
+    --hero: #779cee;
 }
 
-/* === your rules === */
+
+.banner {
+    background-color: var(--banner);
+    text-align: center;
+    padding: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+}
+
+.banner a {
+    color: var(--link);
+}
+
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    padding: 1rem 1.5rem;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 1.5rem;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+
+main {
+    background-color: var(--hero);
+    min-height: 80vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+
+article,
+.afbeelding {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+
+article {
+    padding: 2rem;
+}
+
+.bovenkop {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+
+article p:not(.bovenkop) {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+
+.knop {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 0.65rem 1rem;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+}
+
+
+.afbeelding {
+    padding: 2rem;
+    text-align: center;
+}
+
+.afbeelding img {
+    width: 70%;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.banner a:hover,
+.banner a:focus,
+header a:hover,
+header a:focus {
+    text-decoration: underline;
+}
+
+.knop:hover,
+.knop:focus {
+    background-color: #333333;
+}
