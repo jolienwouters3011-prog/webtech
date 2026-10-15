@@ -2,7 +2,60 @@
 
 /* === tokens === */
 :root {
-
+--blauw:#2554ab;
+--lila:#a090af;
+--bruin:#a16122;
+--geel:#e7c948;
+--marine:#13234e;
+--olijf:#ae9310;
+--rood:#cd2424;
 }
 
 /* === your rules === */
+
+.schilderij{
+    width: 70vh;
+    height: 70vh;
+    background-color: var(--blauw);
+    margin: 15vh 15vh ;
+    border:2vh auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2vh;
+    border: 2vh solid var(--blauw);
+}
+
+
+
+
+.lila {
+  background-color: var(--lila);
+  grid-column: span 3;
+}
+
+.bruin {
+  background-color: var(--bruin);
+}
+
+.geel {
+  background-color: var(--geel);
+}
+
+.marine {
+  background-color: var(--marine);
+  grid-column: 4;
+}
+
+.olijf {
+  background-color: var(--olijf);
+  grid-column: span 3;
+}
+
+.rood {
+  background-color: var(--rood);
+}
+
+
+
+
