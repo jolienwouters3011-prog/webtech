@@ -1,8 +1,268 @@
 /* stijl.css - labo 5, koffiebar (reset.css is linked before this file) */
 
-/* === tokens === */
-:root {
 
+:root {
+  --kleur-achtergrond: #f4efe6;
+  --kleur-kaart: #ffffff;
+  --kleur-tekst: #2b2b2b;
+  --kleur-gedempt: #6b6b6b;
+  --kleur-balk: #2f241d;
+  --kleur-accent: #c8742e;
 }
 
-/* === your rules === */
+
+
+
+body {
+  display: grid;
+
+  grid-template-columns: 16rem 1fr;
+  grid-template-rows: auto 1fr auto;
+
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+
+  min-height: 100vh;
+
+  background-color: var(--kleur-achtergrond);
+  color: var(--kleur-tekst);
+  font-family: Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 1rem 2rem;
+  background-color: var(--kleur-balk);
+  color: white;
+}
+
+
+
+.logo {
+  color: var(--kleur-accent);
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a.actief {
+  color: var(--kleur-accent);
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+
+aside {
+  padding: 2rem;
+  border-right: 1px solid #ddd5c8;
+  font-size: 0.875rem;
+}
+
+aside h2 {
+  margin-bottom: 0.5rem;
+  font-family: Georgia, serif;
+  font-size: 1.25rem;
+}
+
+aside p {
+  margin-bottom: 2rem;
+}
+
+
+main {
+  padding: 2rem;
+}
+
+h1,
+h2 {
+  font-family: Georgia, serif;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.intro {
+  margin-bottom: 2rem;
+  color: var(--kleur-gedempt);
+}
+
+
+.kaarten {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+
+  list-style: none;
+}
+
+
+.kaart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background-color: var(--kleur-kaart);
+  box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 8%);
+}
+
+
+.kaart:not(:has(img)) {
+  border-top: 0.5rem solid var(--kleur-accent);
+  padding: 1.5rem;
+}
+
+
+
+.kaart img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+
+.tekst {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.kaart h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.kaart p {
+  margin-bottom: 1rem;
+}
+
+
+.kaart .prijs {
+  margin-top: auto;
+  margin-bottom: 0;
+  color: var(--kleur-accent);
+  font-weight: bold;
+}
+
+
+
+.badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 1;
+
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+
+  background-color: var(--kleur-accent);
+  color: white;
+
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+footer {
+  padding: 1rem 2rem;
+  background-color: var(--kleur-balk);
+  color: white;
+}
+
+
+
+@media (max-width: 60rem) {
+  .kaarten {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+
+@media (max-width: 40rem) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  aside {
+    border-right: 0;
+    border-bottom: 1px solid #ddd5c8;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .kaarten {
+    grid-template-columns: 1fr;
+  }
+}
+```

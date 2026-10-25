@@ -2,7 +2,64 @@
 
 /* === tokens === */
 :root {
-
 }
 
 /* === your rules === */
+body {
+  background-color: rgb(25, 1, 1);
+}
+
+.lijst img {
+  aspect-ratio: 1/1;
+}
+
+.lijst {
+  height: 70vh;
+  width: 70vh;
+  margin: 15vh auto;
+  background-color: green;
+  position: relative;
+}
+
+.vlakje {
+  width: 6rem;
+  height: 6rem;
+  background-color: red;
+  position: absolute;
+}
+
+.roze {
+  background-color: pink;
+}
+.lime {
+  background-color: lime;
+  right: 4rem;
+  bottom: 4rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.rood {
+  background-color: red;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 3;
+}
+
+.groen {
+  background-color: green;
+  left: 2rem;
+  top: 2rem;
+}
+
+.roze {
+  background-color: pink;
+  left: 4rem;
+  top: 4rem;
+  z-index: 2;
+}
+
+figcaption {
+  color: white;
+  text-align: center;
+}

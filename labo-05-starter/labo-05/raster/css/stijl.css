@@ -3,6 +3,79 @@
 /* === tokens === */
 :root {
 
+    --a:#e9493f;
+    --b:#edd24a;
+    --c:#072f55;
+    --d:#52a51a;
+    --e:#efaad9;
+    --f:#a5f129;
+    --g:#ebc47a;
+    --h:#e8882c;
+ 
 }
 
 /* === your rules === */
+ main{
+    height: 100vh;
+    padding: 2rem;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 1rem ;
+ }
+
+.a{
+    background-color: var(--a);
+
+  
+ }
+.vlak{
+    text-align: right;
+        color: white;
+        padding: 1rem;
+
+}
+
+.h, .b {
+grid-column: 4;
+}
+ main :nth-child(2){
+    background-color: var(--b);
+    color: white;
+    text-align: right;
+ }
+
+ main :nth-child(3){
+    background-color: var(--c);
+    color: white;
+    text-align: right;
+ }
+
+ main :nth-child(4){
+    background-color: var(--d);
+    color: white;
+    text-align: right;
+ }
+
+ main :nth-child(5){
+    background-color: var(--e);
+    color: white;
+    text-align: right;
+ }
+
+ main :nth-child(6){
+    background-color: var(--f);
+    color: white;
+    text-align: right;
+ }
+
+ main :nth-child(7){
+    background-color: var(--g);
+    color: white;
+    text-align: right;
+ }
+
+ main :nth-child(8){
+    background-color: var(--h);
+    color: white;
+    text-align: right;
+ }

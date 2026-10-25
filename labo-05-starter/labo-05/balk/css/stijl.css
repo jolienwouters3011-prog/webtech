@@ -1,8 +1,116 @@
-/* stijl.css - labo 5, balk (reset.css is linked before this file) */
-
-/* === tokens === */
 :root {
-
+  --kleur-papier: #f8f7f5;
+  --kleur-inkt: #1a1a1a;
+  --kleur-gedempt: #6b6b6b;
+  --kleur-balk: #000000;
+  --kleur-link: #9a9a9a;
+  --kleur-wit: #ffffff;
 }
 
-/* === your rules === */
+html {
+  scroll-padding-top: 3.5rem;
+}
+
+body {
+  background-color: var(--kleur-papier);
+  color: var(--kleur-inkt);
+  font-family: Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  height: 3.5rem;
+  padding: 0 2rem;
+  background-color: var(--kleur-balk);
+}
+
+.logo {
+  margin-right: auto;
+  color: var(--kleur-wit);
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a {
+  color: var(--kleur-link);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a.actief {
+  color: var(--kleur-wit);
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--kleur-wit);
+}
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1,
+h2 {
+  font-family: Georgia, serif;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+.intro {
+  color: var(--kleur-gedempt);
+}
+
+.inhoud {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.inhoud li {
+  margin-left: 1.5rem;
+}
+
+.inhoud a {
+  color: var(--kleur-inkt);
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+footer {
+  padding: 1.5rem 2rem;
+  background-color: var(--kleur-balk);
+  color: var(--kleur-link);
+  font-size: 0.875rem;
+  text-align: center;
+}

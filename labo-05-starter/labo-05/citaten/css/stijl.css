@@ -3,6 +3,41 @@
 /* === tokens === */
 :root {
 
+    --blauw:#1e5bd8;
+    --roze:#e88bb4;
+ --rood:#c51f2a;
+ --oranje:#d98c1a;
+ 
+ 
+ 
+ ;
+
 }
 
 /* === your rules === */
+.citaat{
+
+flex-basis: 18rem;
+flex-grow:1;
+padding-left: 1rem;
+    }
+
+
+
+.citaten{
+    flex-wrap:wrap ;
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+    ;
+}
+
+.blauw {
+color: var(--blauw);
+border-left: 1rem solid var(--blauw);
+}
+
+.roze {
+    color: var(--roze);
+    border-left: 1rem solid var(--roze);
+}
