@@ -27,7 +27,6 @@ main {
   justify-content: center;
   min-height: 10rem;
   min-width: 5rem;
-  box-shadow: 2rem;
 }
 
 body {
@@ -63,11 +62,6 @@ a {
   margin: 0;
 }
 
-h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 26px;
-}
-
 header {
   background-color: #89aaf6;
   padding: 1rem;
@@ -75,8 +69,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
 }
 
 nav a:hover,
