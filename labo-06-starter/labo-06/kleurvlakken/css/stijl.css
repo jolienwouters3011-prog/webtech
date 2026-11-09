@@ -2,9 +2,44 @@
 
 /* === tokens === */
 :root {
-
+  --rood: #b90020;
+  --geel: #ffcd00;
+  --groen: #349803;
+  --blauw: #006aff;
 }
 
 /* === base: narrow screens first === */
+.rood {
+  background-color: var(--rood);
+}
+
+.geel {
+  background-color: var(--geel);
+}
+
+.groen {
+  background-color: var(--groen);
+}
+
+.blauw {
+  background-color: var(--blauw);
+}
 
 /* === media queries: below the base rules === */
+
+main {
+  display: grid;
+  height: 100vh;
+}
+
+@media (min-width: 600px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -2,7 +2,100 @@
 
 /* === tokens === */
 :root {
+  --papier: #f3f1ec;
+  --tegels: #1f2933;
+  --grafiek: #2c6e8f;
+  --omzet: #c8742e;
+  --bezoekers: #3b7a2a;
+  --agenda: #6b4fa3;
+  --taken: #b2323a;
+  --weer: #e0b43a;
+  --donkeretekst: #1f2933;
+  --titel: #1f2933;
 
+  .titel {
+    background-color: var(--titel);
+  }
+
+  .papier {
+    background-color: var(--papier);
+  }
+
+  .grafiek {
+    background-color: var(--grafiek);
+  }
+
+  .omzet {
+    background-color: var(--omzet);
+  }
+
+  .bezoekers {
+    background-color: var(--bezoekers);
+  }
+
+  .agenda {
+    background-color: var(--agenda);
+  }
+
+  .taken {
+    background-color: var(--taken);
+  }
+
+  .weer {
+    background-color: var(--weer);
+  }
+
+  .donkeretekst {
+    background-color: var(--donkeretekst);
+  }
+}
+
+main {
+  display: grid;
+  height: 98vh;
+  gap: 1rem;
+}
+
+body {
+  background-color: var(--papier);
+  padding: 1rem;
+  color: var(--donkeretekst);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tegel {
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+  .titel,
+  .grafiek,
+  .weer {
+    grid-column: 1/-1;
+  }
+  .tegels {
+    min-height: 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grafiek {
+    grid-column: 1/3;
+    grid-row: 2/4;
+  }
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    height: 98vh;
+  }
+  .agenda {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
 }
 
 /* === base: narrow screens first === */
