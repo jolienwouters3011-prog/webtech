@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/Fraunces.woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("../fonts/AtkinsonHyperlegible-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("../fonts/AtkinsonHyperlegible-Bold.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --color-surface: hsl(195 40% 95%);
+  --color-ink: hsl(200 50% 12%);
+  --color-muted: hsl(200 15% 38%);
+  --color-accent: hsl(350 75% 40%);
+  --color-line: hsl(195 20% 78%);
+
+  --font-kop: "Fraunces", Georgia, serif;
+  --font-tekst: "Atkinson Hyperlegible", Verdana, sans-serif;
+
+  --radius: 1rem;
+}

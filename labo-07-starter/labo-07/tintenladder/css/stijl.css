@@ -1,0 +1,80 @@
+:root {
+  --hue: 210;
+
+  --papier: hsl(40 30% 97%);
+  --inkt: hsl(210 25% 12%);
+  --gedempt: hsl(210 10% 42%);
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100svh;
+  background-color: var(--papier);
+  color: var(--inkt);
+}
+
+header {
+  padding: 2rem;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+header p {
+  color: var(--gedempt);
+  font-size: 0.875rem;
+}
+
+.ladder {
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.trede {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: var(--inkt);
+}
+
+.trede:nth-child(1) {
+  background-color: hsl(var(--hue) 55% 95%);
+}
+.trede:nth-child(2) {
+  background-color: hsl(var(--hue) 55% 85%);
+}
+.trede:nth-child(3) {
+  background-color: hsl(var(--hue) 55% 75%);
+}
+.trede:nth-child(4) {
+  background-color: hsl(var(--hue) 55% 65%);
+}
+.trede:nth-child(5) {
+  background-color: hsl(var(--hue) 55% 55%);
+}
+.trede:nth-child(6) {
+  background-color: hsl(var(--hue) 55% 45%);
+}
+.trede:nth-child(7) {
+  background-color: hsl(var(--hue) 55% 35%);
+}
+.trede:nth-child(8) {
+  background-color: hsl(var(--hue) 55% 25%);
+}
+.trede:nth-child(9) {
+  background-color: hsl(var(--hue) 55% 15%);
+}
+.trede:nth-child(10) {
+  background-color: hsl(var(--hue) 55% 5%);
+}
+
+.trede:nth-child(n + 6) {
+  color: var(--papier);
+}
